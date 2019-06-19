@@ -1,14 +1,17 @@
 html {
   margin: 0;
   padding: 0;
+  font-size: 32px;
 }
 
 body {
   margin: 0;
   padding: 0;
-
 }
 
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
 
 header {
   background: rgb(24, 23, 23);
@@ -20,10 +23,16 @@ header {
   left: 0;
 }
 
+header .menu {
+  margin: 10px;
+}
+
 .jumbo {
   margin-top: 60px;
   background: rgb(185, 185, 255);
   position: relative;
+  padding: 60px 0;
+  height: 100vh;
 }
 
 .jumbo-image {
@@ -39,7 +48,15 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  text-align: center;
 }
+
+.jumbo-name {
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+}
+
 
 .three-details {
   display: grid;
@@ -47,14 +64,155 @@ header {
   grid-gap: 20px;
   max-width: 900px;
   margin: 0 auto;
-  border: solid green 2px; 
+  padding: 120px 0;
+
 }
 
 .three-details--details-box {
-  border: solid red 2px;
+  /* border: solid red 2px; */
   text-align: center;
 }
 
 .three-details--details-icon {
-  width: 100px;
+  width: 80px;
+}
+
+.selector-element {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.selector-element--image-box {
+  text-align: center;
+}
+
+.selector-element--image-box-image {
+  width: 250px;
+  margin: 20px;
+}
+
+.selector-element--image-box fieldset {}
+
+.selector-element--text-box {
+  text-align: center;
+}
+
+.battery-details {
+  display: block;
+  text-align: center;
+  height: 500px;
+  height: 75vh;
+  position: relative;
+}
+
+.side-on-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  height: 500px;
+}
+
+.battery-details--text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.battery-details--text span {
+  font-weight: 900;
+}
+
+.video-block {
+  height: 800px;
+  height: 100vh;
+  background: rgb(250, 226, 230);
+  position: relative;
+  margin: 0;
+}
+
+.video-block--text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(114, 107, 107);
+}
+
+.camera-details {
+  background: blue;
+  text-align: center;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.camera-details--text-title {
+  margin-top: 200px;
+
+}
+
+.camera-details--image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.camera-details--text-box {
+  display: block;
+  text-align: center;
+}
+
+.more-info {
+  background: purple;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.half-width {
+
+}
+
+.image-half-width {
+  text-align: center;
+  background: white;
+}
+
+.text-half-width {
+  text-align: center;
+}
+
+.phone-outside {
+  width: 400px;
+}
+
+.stats {
+  background: yellow;
+}
+
+.stats-title {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.conclusion {
+  background: url(https://cdn.vox-cdn.com/uploads/chorus_image/image/63384104/1903_huawei_p30pro00_2.0.jpg);
+  height: 100vh;
+  color: white;
+}
+
+.conclusion-title {
+  padding: 200px 100px 20px 100px;
+  text-align: left;
+}
+
+.conclusion-sub-title {
+  margin: 0 100px;
+  max-width: 550px;
+}
+
+footer {
+  background-color: rgb(54, 24, 54);
+  width: 100%;
+  height: 100px;
 }
